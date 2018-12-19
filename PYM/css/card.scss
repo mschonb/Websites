@@ -1,0 +1,117 @@
+$dark-green:  #4bc970;
+$light-gray:  #fafafa;
+$white:       #fff;
+
+body {
+  padding: 1em 0;
+}
+
+/* CSS for card-flip adapted from David Walsh's code and uraimo's code (in the comments) at http://davidwalsh.name/css-flip */
+
+.flip-container {
+  cursor: pointer;
+  margin: 0 auto;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.flip-container.flip .flipper  {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.flip-container, .front, .back {
+  border-radius: 10px;
+  width: 320px;
+  height: 480px;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  background: $light-gray;
+  border: 1px solid darken($light-gray, 12%);
+  box-shadow: 0 4px 7px rgba(0,0,0,0.15);
+  /* front pane, placed above back */
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  #mark {
+    margin: 9em auto;
+    max-width: 200px;
+  }
+}
+
+.back {
+  background: $dark-green;
+  border: 1px solid darken($dark-green, 12%);
+  box-shadow: 0 4px 7px rgba(0,0,0,0.15);
+  color: $white;
+  padding: 1.5em;
+  transform: rotateY(180deg);
+  h1 {
+    color: $white;
+    font-family: "museo-slab", "jaf-bernino-sans-comp";
+    font-size: 2em;
+    letter-spacing: -1px;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    text-transform: none;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.icon-margin-right {
+  margin-right: 1em;
+}
+
+#card-pic {
+  border: 7px solid fade-out($white, 0.5);
+  max-width: 160px;
+}
+
+#attribution {
+  color: darken($light-gray, 25%);
+  font-size: 0.6em;
+  a {
+    color: darken($light-gray, 25%);
+    &:hover, &:active {
+      color: darken($light-gray, 50%);
+    }
+  }
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
