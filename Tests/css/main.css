@@ -1,0 +1,50 @@
+/* ELEMENTS */
+
+body{
+
+}
+
+/* IDS */
+#banner{
+  background-color: black;
+  color: white;
+}
+
+#white01{
+    background-color: white;
+}
+
+#black01{
+  background-color: black;
+}
+
+
+
+/* CLASSES */
+
+.black h2, h4{
+  color: white;
+}
+
+.black h4{
+  font-size: 1.5em;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.full-screen{
+  height: 100vh;
+  width: auto;
+}
+
+.section-header{
+  padding-top: 5%;
+}
+.white h4{
+  color: darkgray;
+}
