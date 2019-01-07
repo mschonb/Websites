@@ -1,7 +1,14 @@
+/* FONTS */
+@font-face { font-family: Orbitron; src: url('fonts/orbitron-light.otf'); }
+
+
 /* ELEMENTS */
+html{
+  scroll-behavior: smooth;
+}
 
 body{
-
+  font-family: Orbitron;
 }
 
 /* IDS */
@@ -16,6 +23,20 @@ body{
 
 #black01{
   background-color: black;
+}
+
+#MTSLogo {
+    animation: breathing 6s infinite;
+    transform-origin: center left;
+}
+
+#down_arrow{
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,-50%);
+  animation: up_down 6s infinite;
 }
 
 
@@ -38,7 +59,7 @@ body{
 }
 
 .full-screen{
-  height: 100vh;
+  height: 105vh;
   width: auto;
 }
 
@@ -47,4 +68,41 @@ body{
 }
 .white h4{
   color: darkgray;
+}
+
+/*  ANIMATIONS */
+
+@keyframes breathing {
+
+  0% {
+    transform: scale(0.85) translate(-50%,-50%);
+    opacity: 0.4
+  }
+  50% {
+    transform: scale(1) translate(-50%,-50%);
+    opacity: 1
+  }
+  100% {
+    transform: scale(0.85) translate(-50%,-50%);
+    opacity: 0.4
+  }
+}
+
+@keyframes up_down {
+
+  0%{
+    transform: translate(-50%,-50%);
+    opacity: 0.4
+  }
+
+  50%{
+    transform: translate(-50%,350%);
+    opacity: 1
+  }
+
+  100%{
+    transform: translate(-50%,-50%);
+    opacity: 0.4
+  }
+
 }
