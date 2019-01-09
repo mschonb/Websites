@@ -9,51 +9,79 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1, user-scalable=0">
   </head>
   <body>
     <!-- NAVBAR -->
       <!-- <nav class="black" role="navigation">
         <div class="nav-wrapper container">
           <a id="logo-container" href="#" class="brand-logo"></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">PRODUCTOS</a></li>
-            <li><a href="#">EQUIPO</a></li>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="#banner">INICIO</a></li>
+            <li><a href="#quienes">¿QUIENES SOMOS?</a></li>
+            <li><a href="#productos">PRODUCTOS</a></li>
+            <li><a href="#equipo">EQUIPO</a></li>
             <li><a href="#">CONTACTO</a></li>
 
           </ul>
 
           <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">PRODUCTOS</a></li>
-            <li><a href="#">EQUIPO</a></li>
+            <li><a href="#banner">INICIO</a></li>
+            <li><a href="#quienes">¿QUIENES SOMOS?</a></li>
+            <li><a href="#productos">PRODUCTOS</a></li>
+            <li><a href="#equipo">EQUIPO</a></li>
             <li><a href="#">CONTACTO</a></li>
           </ul>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
       </nav> -->
+      <div class="black" id="nav">
+        <ul id="slide-out" class="sidenav">
+           <li><a href="#!"><i class="material-icons">cloud</i>MIQROTEKSIS</a></li>
+           <li><a  class="waves-effect sidenav-close" href="#!">INICIO</a></li>
+           <li><div class="divider"></div></li>
+           <li><a  class="waves-effect sidenav-close" href="#quienes">¿QUIENES SOMOS?</a></li>
+           <li><div class="divider"></div></li>
+           <li><a  class="waves-effect sidenav-close" href="#productos">PRODUCTOS</a></li>
+           <li><div class="divider"></div></li>
+           <li><a  class="waves-effect sidenav-close" href="#equipo">EQUIPO</a></li>
+           <li><div class="divider"></div></li>
+           <li><a  class="waves-effect sidenav-close" href="#contacto">CONTACTO</a></li>
+           <li><div class="divider"></div></li>
+         </ul>
+           <a id="menuicon" href="#" data-target="slide-out" class="sidenav-trigger">
+              <i class="material-icons" style="font-size:45px;">menu</i>
+          </a>
+      </div>
 
-      
 
     <!-- BANNER -->
     <section id="banner" class="full-screen">
-      <img src="img/text_logo.svg" alt="logo" class="center" id="MTSLogo" style="filter: invert(100%);">
-      <a href="#white01">
+      <a href="#quienes">
+        <img src="img/text_logo.svg" alt="logo" class="center" id="MTSLogo" style="filter: invert(100%);">
         <img src="img/arrow_down.png" alt="logo"  id="down_arrow" style="filter: invert(100%);">
       </a>
     </section>
 
     <!-- ELEMENT TRANS -->
-    <section id="white01" class="full-screen white">
+    <section id="quienes" class="full-screen white">
       <div class="section-header">
-        <h2 class="center-align">MIQROTEKSIS</h2>
+        <h2 class="center-align">¿QUIÉNES SOMOS?</h2>
+        <h4 class="center-align">Conocenos</h4>
+      </div>
+    </section>
+
+    <section id="productos" class="full-screen black">
+      <div class="section-header">
+        <h2 class="center-align">PRODUCTOS</h2>
         <h4 class="center-align">Sistemas Inteligentes</h4>
       </div>
     </section>
 
-    <section id="black01" class="full-screen black">
+    <section id="equipo" class="full-screen white">
       <div class="section-header">
-        <h2 class="center-align">MIQROTEKSIS</h2>
+        <h2 class="center-align">EQUIPO</h2>
         <h4 class="center-align">Sistemas Inteligentes</h4>
       </div>
     </section>

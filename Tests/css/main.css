@@ -17,17 +17,26 @@ body{
   color: white;
 }
 
-#white01{
-    background-color: white;
+#quienes, #equipo{
+  background-color: white;
 }
 
-#black01{
+#productos{
   background-color: black;
 }
 
 #MTSLogo {
     animation: breathing 6s infinite;
     transform-origin: center left;
+}
+
+#menuicon{
+  color: white;
+}
+
+#nav{
+  padding-top: 2vh;
+  padding-left: 1vw;
 }
 
 #down_arrow{
