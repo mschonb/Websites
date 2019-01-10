@@ -3,7 +3,7 @@ $(document).ready(function(){
 	// Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
 
-	// Scene 1 - pin the second section
+	//Pin Sections
 	var pinScene01 = new ScrollMagic.Scene({
 		triggerElement: '#quienes',
 		triggerHook: 0,
@@ -39,4 +39,24 @@ $(document).ready(function(){
   .setPin('#contacto .pin-wrapper')
   .addTo(controller)
   ;
+
+	//change manu button color
+
+	var menuColor = new ScrollMagic.Scene({
+		triggerElement: '#quienes',
+		triggerHook: 0,
+		duration: '100%'
+	})
+	.setClassToggle("#menuicon", "b")
+	.addTo(controller)
+	;
+
+	var menuColor = new ScrollMagic.Scene({
+		triggerElement: '#equipo',
+		triggerHook: 0,
+		duration: '100%'
+	})
+	.setClassToggle("#menuicon", "b")
+	.addTo(controller)
+	;
 });

@@ -36,7 +36,8 @@ h1,h2,h3,h4,h5{
 }
 
 #menuicon{
-  color: white;
+  position: fixed;
+  z-index: 999;
 }
 
 #nav{
@@ -107,6 +108,14 @@ h1,h2,h3,h4,h5{
 }
 .white h4{
   color: darkgray;
+}
+
+.w{
+  color: white;
+}
+
+.b{
+  color:black;
 }
 
 /*  ANIMATIONS */
