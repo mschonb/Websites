@@ -16,6 +16,11 @@ body{
 h1,h2,h3,h4,h5{
   font-family: Orbitron;
 }
+
+footer{
+  position: absolute;
+  min-width: 100vw;
+}
 /* IDS */
 #banner{
   background-color: black;
@@ -96,6 +101,7 @@ h1,h2,h3,h4,h5{
         background: url(../img/img_macbook01.png) no-repeat top left;
         transform: translate(-80%, -40%);
     }
+
 
 
 .full-screen{
