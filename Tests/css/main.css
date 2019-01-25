@@ -37,7 +37,7 @@ footer{
 
 #MTSLogo {
     animation: breathing 6s infinite;
-    transform-origin: center left;
+    transform-origin: left;
 }
 
 #menuicon{
@@ -59,6 +59,14 @@ footer{
   animation: up_down 6s infinite;
 }
 
+#misvis h2{
+    transform: translate(-32px, 0px);
+}
+
+#equipo{
+    min-height: 110vh;
+}
+
 
 
 /* CLASSES */
@@ -78,10 +86,13 @@ footer{
   transform: translate(-50%,-50%);
 }
 
+.gap   {
+    min-height: 10vh;
+}
+
 .slide {
   position: relative;
   overflow: hidden;
-  height: 100vh;
 }
     .slide .pin-wrapper {
         width: 100%;
@@ -92,20 +103,11 @@ footer{
         top: 45%;
         left: 50%;
     }
-    .slide .img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 700px;
-        height: 418px;
-        background: url(../img/img_macbook01.png) no-repeat top left;
-        transform: translate(-80%, -40%);
-    }
 
 
 
 .full-screen{
-  height: 105vh;
+  height: 120vh;
   width: auto;
 }
 
@@ -122,6 +124,14 @@ footer{
 
 .b{
   color:black;
+}
+
+.black p{
+    color: white;
+}
+
+.black a{
+    font-size: 1.25em;
 }
 
 /*  ANIMATIONS */
