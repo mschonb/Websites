@@ -2,17 +2,17 @@ $(document).ready(function(){
 
 	// Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
-
 	//Pin Sections
-	var pinScene01 = new ScrollMagic.Scene({
-		triggerElement: '#quienes',
-		triggerHook: 0,
-		duration: '120%'
-	})
-	.setPin('#quienes .pin-wrapper')
-	.addTo(controller)
-	;
-
+    if($(window).width() >= 1024) {
+        var pinScene01 = new ScrollMagic.Scene({
+        	triggerElement: '#quienes',
+        	triggerHook: 0,
+        	duration: '120%'
+        })
+        .setPin('#quienes .pin-wrapper')
+        .addTo(controller)
+        ;
+    }
   var pinscene02 = new ScrollMagic.Scene({
     triggerElement: '#productos',
     triggerHook: 0,
@@ -21,7 +21,6 @@ $(document).ready(function(){
   .setPin('#productos .pin-wrapper')
   .addTo(controller)
   ;
-
 
   var pinscene04 = new ScrollMagic.Scene({
     triggerElement: '#contacto',
